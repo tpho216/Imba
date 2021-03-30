@@ -1,0 +1,39 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aether_bkg">
+
+
+
+    <TextView
+        android:id="@+id/state_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/state_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        app:MvxBind="Text State"
+
+        />
+
+    <Button
+        android:id="@+id/show_tabview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show tab view"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_purple"
+        app:MvxBind="Click ShowTabsViewCommand"
+        />
+
+   
+     
+
+</LinearLayout>

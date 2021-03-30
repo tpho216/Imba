@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+  
+
+     <MvvmCross.DroidX.MvxSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/refresher"
+            app:MvxBind="Refreshing IsBusy; RefreshCommand RefreshCommand">
+
+        <MvvmCross.DroidX.RecyclerView.MvxRecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:MvxItemTemplate="@layout/todo_item_view_layout"
+        app:MvxBind="ItemsSource TodoList"
+        />
+     </MvvmCross.DroidX.MvxSwipeRefreshLayout>
+></LinearLayout>
